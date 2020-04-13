@@ -1,0 +1,27 @@
+{
+  "name": "pm2-no-daemon-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start ecosystem.config.js --no-daemon",
+    "stop": "pm2 stop ecosystem.config.js",
+    "stop-reset": "pm2 stop ecosystem.config.js; rm -rf ~/.pm2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/privatenumber/pm2-no-daemon-bug.git"
+  },
+  "author": "Hiroki Osame <hiroki.osame@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/privatenumber/pm2-no-daemon-bug/issues"
+  },
+  "homepage": "https://github.com/privatenumber/pm2-no-daemon-bug#readme",
+  "dependencies": {
+    "log-args": "github:privatenumber/log-args"
+  },
+  "devDependencies": {
+    "pm2": "^4.2.3"
+  }
+}
