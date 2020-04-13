@@ -5,7 +5,7 @@
 ### Two things that fixes it:
 - Remove clustering (`instances: 1`)
 - Not using `--no-daemon`
-- Second `pm2 start` after `pm2 stop` (However, we can reproduce the first run by deleting `~/.pm2` -- behind `npm run stop-reset`)
+- Second `npm start` after `npm stop` (However, we can reproduce the first run by deleting `~/.pm2` -- behind `npm run stop-reset`)
 
 ### First run:
 ```
